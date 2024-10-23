@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <!-- Link para usar ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-address-book"></i> Agenda de Contatos</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="tel" id="phone" placeholder="Telefone" required>
+            <button type="submit"><i class="fas fa-plus"></i> Adicionar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th><i class="fas fa-user"></i> Nome</th>
+                    <th><i class="fas fa-phone"></i> Telefone</th>
+                    <th><i class="fas fa-cog"></i> Ações</th>
+                </tr>
+            </thead>
+            <tbody id="contactList"></tbody>
+        </table>
+    </div>
+</body>
+</html>
